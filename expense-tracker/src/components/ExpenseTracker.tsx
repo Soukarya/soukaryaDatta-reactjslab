@@ -35,8 +35,7 @@ export default class ExpenseTracker extends Component<Props,State>{
 
    setProduct = (event: ChangeEvent<HTMLInputElement>) => {
     this.setState({
-        product:event.target.value
-    });
+        product:event.target.value});
    }
    setPayeeName = (event: ChangeEvent<HTMLSelectElement>) => {
     this.setState({
@@ -62,6 +61,8 @@ export default class ExpenseTracker extends Component<Props,State>{
         <section>
             <header>
                 <h1>Add New Item</h1>
+                <p>Read the below instructions before proceeding:</p>
+                <p>Make sure you fill all the fields where * is provided</p>
             </header>
         
         <form onSubmit={this.submitHandler}>
